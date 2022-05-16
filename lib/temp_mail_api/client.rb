@@ -1,13 +1,7 @@
-require File.expand_path('../client/user', __FILE__)
-require File.expand_path('../client/likes', __FILE__)
-require File.expand_path('../client/follows', __FILE__)
-require File.expand_path('../client/posts', __FILE__)
+require File.expand_path('../client/domains', __FILE__)
 
-module LimbikoApi
+module TempMailApi
   class Client < API
-    include ::LimbikoApi::User
-    include ::LimbikoApi::Likes
-    include ::LimbikoApi::Follows
-    include ::LimbikoApi::Posts
+    include ::TempMailApi::Domains
   end
 end
